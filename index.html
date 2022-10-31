@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Fruite Catcher</title>
+
+    <script src="p5.js"></script>
+    <script src="p5.dom.min.js"></script>
+    <script src="p5.play.js"></script>
+
+    <script src="form.js"></script>
+    <script src="game.js"></script>
+    <script src="player.js"></script>
+
+    <!-- El núcleo de Firebase JS SDK siempre es necesario y debe aparecer primero -->
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-database.js"></script>
+
+    <script>
+      // Configuración de Firebase de tu app web.
+      const firebaseConfig = {
+  apiKey: "AIzaSyAGestwa_kyZElgpzfkXSl3quQSuAF7_xM",
+  authDomain: "fruitcatcher-6ab82.firebaseapp.com",
+  databaseURL: "https://fruitcatcher-6ab82-default-rtdb.firebaseio.com",
+  projectId: "fruitcatcher-6ab82",
+  storageBucket: "fruitcatcher-6ab82.appspot.com",
+  messagingSenderId: "1057888283286",
+  appId: "1:1057888283286:web:6d3dfc9945bdbb16d1b0b7"
+};
+      // Inicializa Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <script src="sketch.js"></script>
+  </body>
+</html>
